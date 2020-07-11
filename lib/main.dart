@@ -1,5 +1,7 @@
+/// All packages needed for project
 import 'package:flutter/material.dart';
 
+/// Runs the app
 void main() {
   runApp(clos_it());
 }
