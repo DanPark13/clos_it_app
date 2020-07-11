@@ -7,13 +7,13 @@ class StatsPage extends StatelessWidget {
   final List<Clothing> data = [
     Clothing(
       type: 'shorts',
-      count: 1,
+      count: 3,
       barColor: charts.ColorUtil.fromDartColor
       (Colors.blue),
     ),
     Clothing(
-      type: 'shorts',
-      count: 1,
+      type: 'long',
+      count: 3,
       barColor: charts.ColorUtil.fromDartColor
       (Colors.blue),
   ),

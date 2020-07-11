@@ -24,7 +24,20 @@ Widget build(BuildContext context) {
         series.barColor)
     ];
 
-    return charts.BarChart(series, animate: true);
+    return Container(
+      height: 400,
+      padding: EdgeInsets.all(20),
+      child: Column(
+        children:<Widget>[
+          Text(
+            'gamer town'
+          ),
+          Expanded(
+            child: charts.BarChart(series, animate: true),
+          )
+        ],
+      ),
+    );
   }
 }
 
