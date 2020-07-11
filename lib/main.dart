@@ -34,11 +34,133 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
 
   final List<Widget> _widgetOptions = <Widget>[
-    Column(
+    GridView.count(
+      primary: false,
+      padding: const EdgeInsets.all(20),
+      crossAxisSpacing: 10,
+      mainAxisSpacing: 10,
+      crossAxisCount: 2,
       children: <Widget>[
-        Text(
-          "MyCloset",
-        )
+        GestureDetector(
+          onTap:(){
+            print("Touch me"); ///Need to insert firebase storage
+          },
+          child: Container(
+            padding: EdgeInsets.all(50.0),
+            child: Icon(Icons.add),
+            color: Colors.grey,
+          )
+        ),
+        GestureDetector(
+            onTap:(){
+              print("Touch me"); ///Need to insert firebase storage
+            },
+            child: Container(
+              padding: EdgeInsets.all(50.0),
+              child: Icon(Icons.add),
+              color: Colors.grey,
+            )
+        ),
+        GestureDetector(
+            onTap:(){
+              print("Touch me"); ///Need to insert firebase storage
+            },
+            child: Container(
+              padding: EdgeInsets.all(50.0),
+              child: Icon(Icons.add),
+              color: Colors.grey,
+            )
+        ),
+        GestureDetector(
+            onTap:(){
+              print("Touch me"); ///Need to insert firebase storage
+            },
+            child: Container(
+              padding: EdgeInsets.all(50.0),
+              child: Icon(Icons.add),
+              color: Colors.grey,
+            )
+        ),
+        GestureDetector(
+            onTap:(){
+              print("Touch me"); ///Need to insert firebase storage
+            },
+            child: Container(
+              padding: EdgeInsets.all(50.0),
+              child: Icon(Icons.add),
+              color: Colors.grey,
+            )
+        ),
+        GestureDetector(
+            onTap:(){
+              print("Touch me"); ///Need to insert firebase storage
+            },
+            child: Container(
+              padding: EdgeInsets.all(50.0),
+              child: Icon(Icons.add),
+              color: Colors.grey,
+            )
+        ),
+        GestureDetector(
+            onTap:(){
+              print("Touch me"); ///Need to insert firebase storage
+            },
+            child: Container(
+              padding: EdgeInsets.all(50.0),
+              child: Icon(Icons.add),
+              color: Colors.grey,
+            )
+        ),
+        GestureDetector(
+            onTap:(){
+              print("Touch me"); ///Need to insert firebase storage
+            },
+            child: Container(
+              padding: EdgeInsets.all(50.0),
+              child: Icon(Icons.add),
+              color: Colors.grey,
+            )
+        ),
+        GestureDetector(
+            onTap:(){
+              print("Touch me"); ///Need to insert firebase storage
+            },
+            child: Container(
+              padding: EdgeInsets.all(50.0),
+              child: Icon(Icons.add),
+              color: Colors.grey,
+            )
+        ),
+        GestureDetector(
+            onTap:(){
+              print("Touch me"); ///Need to insert firebase storage
+            },
+            child: Container(
+              padding: EdgeInsets.all(50.0),
+              child: Icon(Icons.add),
+              color: Colors.grey,
+            )
+        ),
+        GestureDetector(
+            onTap:(){
+              print("Touch me"); ///Need to insert firebase storage
+            },
+            child: Container(
+              padding: EdgeInsets.all(50.0),
+              child: Icon(Icons.add),
+              color: Colors.grey,
+            )
+        ),
+        GestureDetector(
+            onTap:(){
+              print("Touch me"); ///Need to insert firebase storage
+            },
+            child: Container(
+              padding: EdgeInsets.all(50.0),
+              child: Icon(Icons.add),
+              color: Colors.grey,
+            )
+        ),
       ],
     ),
     Column(
