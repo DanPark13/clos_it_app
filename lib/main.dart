@@ -34,7 +34,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       children: <Widget>[
         Text(
           "MyCloset",
-        ),
+        )
       ],
     ),
     Column(
@@ -70,7 +70,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Clos.it App'),
+        title: Text('Welcome to Clos.it!'),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
@@ -100,6 +100,12 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         selectedItemColor: Colors.white,
         onTap: _onItemTapped,
       ),
+      floatingActionButton: _selectedIndex == 0 ? FloatingActionButton(
+        onPressed: () {
+          print("You activated my trap card!");
+        },
+        child: Icon(Icons.add),
+      ) : null,
     );
   }
 }
