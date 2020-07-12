@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'Statspage.dart';
+import 'customize.dart';
 
 /// Runs the app
 void main() {
@@ -58,6 +59,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         Text(
           "Customize",
         ),
+        Expanded(
+          child: Customize()
+        )
       ],
     ),
     Column(
