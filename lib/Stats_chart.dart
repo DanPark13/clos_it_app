@@ -24,7 +24,7 @@ class ClothingChart extends StatelessWidget {
       padding: EdgeInsets.all(20),
       child: Column(
         children: <Widget>[
-          Text('gamer town'),
+          Text('Worn Clothing'),
           Expanded(
             child: charts.BarChart(series, animate: true),
           )
