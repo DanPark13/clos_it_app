@@ -8,23 +8,21 @@ class StatsPage extends StatelessWidget {
     Clothing(
       type: 'shorts',
       count: 3,
-      barColor: charts.ColorUtil.fromDartColor
-      (Colors.blue),
+      barColor: charts.ColorUtil.fromDartColor(Colors.blue),
     ),
     Clothing(
       type: 'long',
       count: 3,
-      barColor: charts.ColorUtil.fromDartColor
-      (Colors.blue),
-  ),
+      barColor: charts.ColorUtil.fromDartColor(Colors.blue),
+    ),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: ClothingChart(
-          data: data,
+          child: ClothingChart(
+        data: data,
       )),
     );
   }

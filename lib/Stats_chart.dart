@@ -9,29 +9,22 @@ class ClothingChart extends StatelessWidget {
   ClothingChart({@required this.data});
 
   @override
-Widget build(BuildContext context) {
-
-    List<charts.Series<Clothing, String>> series
-    = [
+  Widget build(BuildContext context) {
+    List<charts.Series<Clothing, String>> series = [
       charts.Series(
-        id: 'chart',
-        data: data,
-        domainFn: (Clothing series, _) =>
-        series.type,
-        measureFn: (Clothing series, _) =>
-        series.count,
-        colorFn: (Clothing series, _) =>
-        series.barColor)
+          id: 'chart',
+          data: data,
+          domainFn: (Clothing series, _) => series.type,
+          measureFn: (Clothing series, _) => series.count,
+          colorFn: (Clothing series, _) => series.barColor)
     ];
 
     return Container(
       height: 400,
       padding: EdgeInsets.all(20),
       child: Column(
-        children:<Widget>[
-          Text(
-            'gamer town'
-          ),
+        children: <Widget>[
+          Text('gamer town'),
           Expanded(
             child: charts.BarChart(series, animate: true),
           )
@@ -40,4 +33,3 @@ Widget build(BuildContext context) {
     );
   }
 }
-
