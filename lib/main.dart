@@ -1,8 +1,9 @@
 /// All packages needed for project
-
+/// test
 import 'package:flutter/material.dart';
 import 'Statspage.dart';
 import 'customize.dart';
+import 'package:flutter_swiper/flutter_swiper.dart';
 
 /// Runs the app
 void main() {
@@ -72,12 +73,17 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
      ],
     ),
 
-    Column(
-      children: <Widget>[
-        Text(
-          "Donation",
-        )
-      ],
+    ListView.builder(
+      itemCount: 3, //insert length of donation
+      itemBuilder: (context, index) {
+        return Card(
+          child: ListTile(
+            onTap: () {},
+            title: Text("Dress"), //insert where to find title
+          ),
+        );
+      },
+
     ),
   ];
 
@@ -91,18 +97,19 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: Text('Welcome to Clos.it!'),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.blue,
         type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.folder_shared),
             title: Text('MyCloset'),
+
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.assistant),
@@ -118,7 +125,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.white,
+        selectedItemColor: Colors.black,
         onTap: _onItemTapped,
       ),
     );
