@@ -1,6 +1,5 @@
 /// All packages needed for project
-/// bruh
-/// ffd
+
 import 'package:flutter/material.dart';
 
 /// Runs the app
@@ -34,18 +33,23 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
 
   final List<Widget> _widgetOptions = <Widget>[
-    Column(
+    GridView.count(
+      primary: false,
+      padding: const EdgeInsets.all(20),
+      crossAxisSpacing: 10,
+      mainAxisSpacing: 10,
+      crossAxisCount: 2,
       children: <Widget>[
-        Text(
-          "MyCloset",
-        )
-      ],
-    ),
-    Column(
-      children: <Widget>[
-        Text(
-          "Customize",
-        )
+        GestureDetector(
+          onTap:(){
+            print("You touched me!");
+          },
+          child: new Container(
+            padding: const EdgeInsets.all(8),
+            child: Icon(Icons.add),
+            color: Colors.grey,
+          )
+        ),
       ],
     ),
     Column(
@@ -104,12 +108,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         selectedItemColor: Colors.white,
         onTap: _onItemTapped,
       ),
-      floatingActionButton: _selectedIndex == 0 ? FloatingActionButton(
-        onPressed: () {
-          print("You activated my trap card!");
-        },
-        child: Icon(Icons.add),
-      ) : null,
     );
   }
 }
