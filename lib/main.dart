@@ -2,6 +2,7 @@
 /// test
 import 'package:flutter/material.dart';
 import 'Statspage.dart';
+import 'package:flutter_swiper/flutter_swiper.dart';
 
 /// Runs the app
 void main() {
@@ -77,7 +78,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         return Card(
           child: ListTile(
             onTap: () {},
-            title: Text("afdsadfs"), //insert where to find title
+            title: Text("Dress"), //insert where to find title
           ),
         );
       },
