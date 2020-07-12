@@ -2,6 +2,7 @@
 /// test
 import 'package:flutter/material.dart';
 import 'Statspage.dart';
+import 'customize.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 /// Runs the app
@@ -56,9 +57,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     ),
     Column(
       children: <Widget>[
-        Text(
-          "Customize",
-        ),
+        Expanded(
+          child: Customize()
+        )
       ],
     ),
     Column(
