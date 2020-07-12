@@ -55,6 +55,13 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     Column(
       children: <Widget>[
         Text(
+          "Customize",
+        ),
+      ],
+    ),
+    Column(
+      children: <Widget>[
+        Text(
           "Statistics",
         ),
       ],
