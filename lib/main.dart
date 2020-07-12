@@ -1,6 +1,7 @@
 /// All packages needed for project
 
 import 'package:flutter/material.dart';
+import 'Statspage.dart';
 
 /// Runs the app
 void main() {
@@ -60,12 +61,16 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       ],
     ),
     Column(
-      children: <Widget>[
-        Text(
-          "Statistics",
-        ),
-      ],
+     children: <Widget>[
+       Text(
+         "Statistics"
+       ),
+       Expanded(
+         child: StatsPage()
+       )
+     ],
     ),
+
     Column(
       children: <Widget>[
         Text(
